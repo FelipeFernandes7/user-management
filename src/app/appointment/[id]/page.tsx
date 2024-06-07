@@ -64,7 +64,7 @@ export default function Appointment({ params }: Appointment) {
           </div>
           <h1 className="text-sm ">Presença</h1>
         </div>
-        <div className="w-full flex flex-col items-center gap-1 px-2">
+        <div className="w-full flex flex-col items-center gap-1 px-2 mb-4">
           {data.users.map((user) => (
             <List
               key={user.id}
