@@ -42,7 +42,7 @@ export default function Appointment({ params }: Appointment) {
       <Typography
         text={"Relatório do Evento"}
         variant={"strong"}
-        styles="my-5 text-purple-500"
+        styles="my-5 text-indigo-500"
         size="3xl"
       />
       <Typography
@@ -56,7 +56,7 @@ export default function Appointment({ params }: Appointment) {
             Nomes
           </h1>
           <div className="flex items-center gap-2">
-            <span className="border-2 p-1 px-1 gap-2 flex items-center border-pink-600 text-pink-600 text-sm rounded-xl">
+            <span className="border-2 p-1 px-1 gap-2 flex items-center border-red-500 text-red-500 text-sm rounded-xl">
               <FaUsersSlash /> {usersWhoGivenUp.length}
             </span>
             <span className="border-2 p-1 px-1 gap-2 flex items-center border-emerald-400 text-emerald-400 text-sm rounded-xl">

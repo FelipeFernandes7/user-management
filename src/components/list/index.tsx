@@ -12,8 +12,8 @@ interface ListProps {
 
 export function List({ payed, name, presence, givenUp }: ListProps) {
   return (
-    <main className="w-full flex relative items-center flex-col bg-neutral-900 p-4 shadow-md rounded-md">
-      <div className="absolute left-0 top-0 h-full w-2 rounded-l-2xl bg-purple-500"></div>
+    <main className="w-full flex relative items-center flex-col bg-neutral-950 p-4 shadow-md rounded-md">
+      <div className="absolute left-0 top-0 h-full w-2 rounded-l-2xl bg-indigo-500"></div>
       <div className="w-full flex items-center justify-between">
         <div className=" h-full flex flex-col gap-3 ">
           <Typography
@@ -39,7 +39,7 @@ export function List({ payed, name, presence, givenUp }: ListProps) {
             </div>
           )}
           {!payed && givenUp && (
-            <div className="flex items-center justify-between gap-2 border border-dashed border-pink-600 rounded-md p-1 text-pink-600 px-2">
+            <div className="flex items-center justify-between gap-2 border border-dashed border-red-500 rounded-md p-1 text-red-500 px-2">
               <Typography
                 variant={"span"}
                 text={"Desistente"}
@@ -53,7 +53,7 @@ export function List({ payed, name, presence, givenUp }: ListProps) {
           <GrStatusGoodSmall
             className={`${presence ? "text-emerald-400" : "text-[#9ca3af]"}`}
           />
-          {givenUp && <GrStatusGoodSmall className={"text-pink-600"} />}
+          {givenUp && <GrStatusGoodSmall className={"text-red-500"} />}
         </div>
       </div>
     </main>
