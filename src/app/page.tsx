@@ -2,7 +2,8 @@
 
 import { Commitment } from "@/components/commitment";
 import { Typography } from "@/components/typography";
-import { AppointmentProps, User, eventData } from "@/data/event";
+import { eventData } from "@/data/event";
+import { usersWhoGivenUp, usersWhoPayed } from "@/helpers/users";
 import { format } from "date-fns";
 import { ptBR } from "date-fns/locale";
 import { useRouter } from "next/navigation";
@@ -13,19 +14,6 @@ export default function Home() {
   function navigateTo(id: string) {
     router.push(`/appointment/${id}`);
   }
-
-  function filterGivenUpUsers(events: AppointmentProps[]): User[] {
-    return events.flatMap((event) =>
-      event.users.filter((user) => user.givenUp),
-    );
-  }
-
-  function filterPayedUsers(events: AppointmentProps[]): User[] {
-    return events.flatMap((event) => event.users.filter((user) => user.payed));
-  }
-
-  const usersWhoGivenUp = filterGivenUpUsers(eventData);
-  const usersWhoPayed = filterPayedUsers(eventData);
 
   return (
     <div className="w-full flex flex-col items-center">
