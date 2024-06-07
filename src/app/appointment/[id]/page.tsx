@@ -42,7 +42,7 @@ export default function Appointment({ params }: Appointment) {
       <Typography
         text={"Relatório do Evento"}
         variant={"strong"}
-        styles="my-5 text-gray-400"
+        styles="my-5 text-gray-200"
         size="lg"
       />
       <Typography
@@ -52,21 +52,17 @@ export default function Appointment({ params }: Appointment) {
       />
       <main className="w-full flex items-center flex-col">
         <div className="w-full flex items-center justify-between px-2 mt-5 mb-3">
-          <h1 className="p-1 border-2 border-gray-300 text-sm rounded-xl">
-            Nomes
-          </h1>
+          <h1 className="text-sm ">Nomes</h1>
           <div className="flex items-center gap-2">
-            <span className="border-2 p-1 px-1 gap-2 flex items-center border-red-500 text-red-500 text-sm rounded-xl">
+            <span className="border-2 p-2 px-2 gap-2 flex items-center border-red-500 text-red-500 text-sm rounded-3xl">
               <FaUsersSlash /> {usersWhoGivenUp.length}
             </span>
-            <span className="border-2 p-1 px-1 gap-2 flex items-center border-emerald-400 text-emerald-400 text-sm rounded-xl">
+            <span className="border-2 p-2 px-2 gap-2 flex items-center border-emerald-400 text-emerald-400 text-sm rounded-3xl">
               <FaUsers />
               {usersWhoPayed.length}
             </span>
           </div>
-          <h1 className="p-1 border-2 border-gray-300 text-sm rounded-xl">
-            Presença
-          </h1>
+          <h1 className="text-sm ">Presença</h1>
         </div>
         <div className="w-full flex flex-col gap-1 px-2">
           {data.users.map((user) => (
