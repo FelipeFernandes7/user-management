@@ -42,13 +42,13 @@ export default function Appointment({ params }: Appointment) {
       <Typography
         text={"Relatório do Evento"}
         variant={"strong"}
-        styles="my-5 text-indigo-500"
-        size="3xl"
+        styles="my-5 text-gray-400"
+        size="lg"
       />
       <Typography
         variant={"h1"}
         text={data.name}
-        styles="text-3xl text-center text-white"
+        styles="text-3xl text-center text-white shadow-md"
       />
       <main className="w-full flex items-center flex-col">
         <div className="w-full flex items-center justify-between px-2 mt-5 mb-3">
