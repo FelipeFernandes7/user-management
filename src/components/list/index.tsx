@@ -12,8 +12,8 @@ interface ListProps {
 
 export function List({ payed, name, presence, givenUp }: ListProps) {
   return (
-    <main className="w-full flex relative items-center flex-col bg-[#151515] p-4 shadow-md rounded-md cursor pointer md:max-w-[300px] hover:scale-105 transition-all duration-300 ease-linear">
-      <div className="absolute left-0 top-0 h-full w-2 rounded-l-2xl bg-indigo-500"></div>
+    <main className="w-full flex relative items-center flex-col bg-[#151515] p-4 shadow-md rounded-md cursor pointer">
+      <div className="absolute left-0 top-0 h-full w-2 rounded-l-2xl bg-gradient-to-b from-[#4f46e5] to-[#c026d3]"></div>
       <div className="w-full flex items-center justify-between">
         <div className=" h-full flex flex-col gap-3 ">
           <Typography

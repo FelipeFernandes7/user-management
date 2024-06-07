@@ -71,7 +71,7 @@ export function Commitment({
           onClick={navigateTo}
           label={"Acessar"}
           size="sm"
-          styles=" bg-gradient-to-r from-[#4f46e5] to-[#c026d3] p-2 rounded-md max-w-[100px]"
+          styles="bg-gradient-to-r from-[#4f46e5] to-[#c026d3] p-2 rounded-md max-w-[100px]"
         />
       </section>
     </div>

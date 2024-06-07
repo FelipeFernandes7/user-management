@@ -54,17 +54,17 @@ export default function Appointment({ params }: Appointment) {
         <div className="w-full flex items-center justify-between px-4 md:px-8 mt-5 mb-3">
           <h1 className="text-sm ">Nomes</h1>
           <div className="flex items-center gap-2">
-            <span className="border-2 p-2 px-2 gap-2 flex items-center border-red-500 text-red-500 text-sm rounded-3xl">
+            <span className=" p-1 px-2 gap-2 flex items-center text-red-500 text-sm rounded-3xl">
               <FaUsersSlash /> {usersWhoGivenUp.length}
             </span>
-            <span className="border-2 p-2 px-2 gap-2 flex items-center border-emerald-400 text-emerald-400 text-sm rounded-3xl">
+            <span className="p-1 px-2 gap-2 flex items-center text-emerald-400 text-sm rounded-3xl">
               <FaUsers />
               {usersWhoPayed.length}
             </span>
           </div>
           <h1 className="text-sm ">Presença</h1>
         </div>
-        <div className="w-full flex flex-col items-center gap-4 px-2 md:flex-row md:justify-center md:flex-wrap">
+        <div className="w-full flex flex-col items-center gap-1 px-2">
           {data.users.map((user) => (
             <List
               key={user.id}
