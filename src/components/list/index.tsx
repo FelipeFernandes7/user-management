@@ -12,7 +12,7 @@ interface ListProps {
 
 export function List({ payed, name, presence, givenUp }: ListProps) {
   return (
-    <main className="w-full flex relative items-center flex-col bg-neutral-900 p-4 shadow-md">
+    <main className="w-full flex relative items-center flex-col bg-neutral-900 p-4 shadow-md rounded-md">
       <div className="absolute left-0 top-0 h-full w-2 rounded-l-2xl bg-gradient-to-b from-[#4f46e5] to-[#c026d3]"></div>
       <div className="w-full flex items-center justify-between">
         <div className=" h-full flex flex-col gap-3 ">
