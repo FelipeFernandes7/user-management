@@ -3,8 +3,6 @@
 import { List } from "@/components/list";
 import { Typography } from "@/components/typography";
 import { AppointmentProps, eventData } from "@/data/event";
-import { format } from "date-fns";
-import { ptBR } from "date-fns/locale";
 import { useEffect, useState } from "react";
 
 type Appointment = {
