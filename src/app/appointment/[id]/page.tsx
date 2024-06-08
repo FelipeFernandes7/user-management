@@ -72,6 +72,7 @@ export default function Appointment({ params }: Appointment) {
               name={user.name}
               presence={user.presence}
               givenUp={user.givenUp}
+              payed_at={user.payed_at}
             />
           ))}
         </div>
